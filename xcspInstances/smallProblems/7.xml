@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+  <presentation name="sampleProblem" maxConstraintArity="2" maximize="false" format="XCSP 2.1_FRODO" />
+  <agents nbAgents="7">
+    <agent name="agent143" />
+    <agent name="agent144" />
+    <agent name="agent145" />
+    <agent name="agent146" />
+    <agent name="agent273" />
+    <agent name="agent274" />
+    <agent name="agent275" />
+  </agents>
+  <domains nbDomains="1">
+    <domain name="domain1" nbValues="44">16 30 44 58 72 86 100 114 128 142 156 254 268 282 296 310 324 338 352 366 380 394 414 428 442 456 470 484 498 512 526 540 554 652 666 680 694 708 722 736 750 764 778 792</domain>
+  </domains>
+  <variables nbVariables="7">
+    <variable name="variable143" domain="domain1" agent="agent143" />
+    <variable name="variable144" domain="domain1" agent="agent144" />
+    <variable name="variable145" domain="domain1" agent="agent145" />
+    <variable name="variable146" domain="domain1" agent="agent146" />
+    <variable name="variable273" domain="domain1" agent="agent273" />
+    <variable name="variable274" domain="domain1" agent="agent274" />
+    <variable name="variable275" domain="domain1" agent="agent275" />
+  </variables>
+  <predicates nbPredicates="16">
+    <predicate name="143 = 144">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>eq(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="143 &gt; 145">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="143 &gt; 146">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="143 &gt; 273">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="143 &gt; 274">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="143 &gt; 275">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="145 = 146">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>eq(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="145 &gt; 273">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="145 &gt; 274">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="145 &gt; 275">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="146 &gt; 273">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="146 &gt; 274">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="146 &gt; 275">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="273 = 274">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>eq(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="273 &gt; 275">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="274 &gt; 275">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+  </predicates>
+  <constraints nbConstraints="16">
+    <constraint name="variable143 &amp; variable144" arity="2" scope="variable143 variable144" reference="143 = 144">
+      <parameters>variable143 variable144 238</parameters>
+    </constraint>
+    <constraint name="variable143 &amp; variable145" arity="2" scope="variable143 variable145" reference="143 &gt; 145">
+      <parameters>variable143 variable145 59</parameters>
+    </constraint>
+    <constraint name="variable143 &amp; variable146" arity="2" scope="variable143 variable146" reference="143 &gt; 146">
+      <parameters>variable143 variable146 186</parameters>
+    </constraint>
+    <constraint name="variable143 &amp; variable273" arity="2" scope="variable143 variable273" reference="143 &gt; 273">
+      <parameters>variable143 variable273 65</parameters>
+    </constraint>
+    <constraint name="variable143 &amp; variable274" arity="2" scope="variable143 variable274" reference="143 &gt; 274">
+      <parameters>variable143 variable274 206</parameters>
+    </constraint>
+    <constraint name="variable143 &amp; variable275" arity="2" scope="variable143 variable275" reference="143 &gt; 275">
+      <parameters>variable143 variable275 517</parameters>
+    </constraint>
+    <constraint name="variable145 &amp; variable146" arity="2" scope="variable145 variable146" reference="145 = 146">
+      <parameters>variable145 variable146 238</parameters>
+    </constraint>
+    <constraint name="variable145 &amp; variable273" arity="2" scope="variable145 variable273" reference="145 &gt; 273">
+      <parameters>variable145 variable273 65</parameters>
+    </constraint>
+    <constraint name="variable145 &amp; variable274" arity="2" scope="variable145 variable274" reference="145 &gt; 274">
+      <parameters>variable145 variable274 206</parameters>
+    </constraint>
+    <constraint name="variable145 &amp; variable275" arity="2" scope="variable145 variable275" reference="145 &gt; 275">
+      <parameters>variable145 variable275 517</parameters>
+    </constraint>
+    <constraint name="variable146 &amp; variable273" arity="2" scope="variable146 variable273" reference="146 &gt; 273">
+      <parameters>variable146 variable273 114</parameters>
+    </constraint>
+    <constraint name="variable146 &amp; variable274" arity="2" scope="variable146 variable274" reference="146 &gt; 274">
+      <parameters>variable146 variable274 65</parameters>
+    </constraint>
+    <constraint name="variable146 &amp; variable275" arity="2" scope="variable146 variable275" reference="146 &gt; 275">
+      <parameters>variable146 variable275 342</parameters>
+    </constraint>
+    <constraint name="variable273 &amp; variable274" arity="2" scope="variable273 variable274" reference="273 = 274">
+      <parameters>variable273 variable274 238</parameters>
+    </constraint>
+    <constraint name="variable273 &amp; variable275" arity="2" scope="variable273 variable275" reference="273 &gt; 275">
+      <parameters>variable273 variable275 471</parameters>
+    </constraint>
+    <constraint name="variable274 &amp; variable275" arity="2" scope="variable274 variable275" reference="274 &gt; 275">
+      <parameters>variable274 variable275 321</parameters>
+    </constraint>
+  </constraints>
+</instance>

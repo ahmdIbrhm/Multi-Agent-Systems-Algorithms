@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+	<presentation name="sampleProblem" maxConstraintArity="2"  
+                maximize="false" format="XCSP 2.1_FRODO" /> 
+  <agents nbAgents="916">
+    <agent name="agent1" />
+    <agent name="agent2" />
+    <agent name="agent3" />
+    <!-- <agent name="agent4" /> -->
+  </agents>
+  <domains nbDomains="8">
+    <domain name="domain0" nbValues="48">16 30 44 58 72 86 100 114 128 142 156 170 240 254 268 282 296 310 324 338 352 366 380 394 408 414 428 442 456 470 478 484 498 512 526 540 554 652 666 680 694 708 722 736 750 764 778 792</domain>
+    <domain name="domain1" nbValues="44">16 30 44 58 72 86 100 114 128 142 156 254 268 282 296 310 324 338 352 366 380 394 414 428 442 456 470 484 498 512 526 540 554 652 666 680 694 708 722 736 750 764 778 792</domain>
+    <domain name="domain2" nbValues="22">30 58 86 114 142 268 296 324 352 380 414 442 470 498 526 554 652 680 708 736 764 792</domain>
+  </domains>
+  <variables nbVariables="916">
+    <variable name="variable1" domain="domain1" agent="agent1" />
+    <variable name="variable2" domain="domain1" agent="agent2" />
+    <variable name="variable3" domain="domain2" agent="agent3" />
+    <!-- <variable name="variable4" domain="domain2" agent="agent4" /> -->
+  </variables>
+  <predicates nbPredicates="5548">
+    <predicate name="1 = 2">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>eq(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="1 &gt; 3">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <!-- <predicate name="4 &gt; 2">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="4 &gt; 1">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate> -->
+    <predicate name="2 &gt; 3">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+  	</predicate> 
+  </predicates>
+  <constraints nbConsraints="5548">
+    <constraint name="variable1 &amp; variable2" arity="2" scope="variable1 variable2" reference="1 = 2">
+      <parameters>variable1 variable2 238</parameters>
+    </constraint>
+    <constraint name="variable1 &amp; variable3" arity="2" scope="variable1 variable3" reference="1 &gt; 3">
+      <parameters>variable1 variable3 8</parameters>
+    </constraint>
+    <!-- <constraint name="variable4 &amp; variable2" arity="2" scope="variable4 variable2" reference="4 &gt; 2">
+      <parameters>variable4 variable2 56</parameters>
+    </constraint>
+    <constraint name="variable4 &amp; variable1" arity="2" scope="variable4 variable1" reference="4 &gt; 1">
+      <parameters>variable4 variable1 42</parameters>
+    </constraint> -->
+    <constraint name="variable2 &amp; variable3" arity="2" scope="variable2 variable3" reference="2 &gt; 3">
+      <parameters>variable2 variable3 224</parameters>
+    </constraint> 
+  </constraints>
+</instance>

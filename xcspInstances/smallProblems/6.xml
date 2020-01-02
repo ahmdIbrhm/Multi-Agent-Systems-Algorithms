@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+  <presentation name="sampleProblem" maxConstraintArity="2" maximize="false" format="XCSP 2.1_FRODO" />
+  <agents nbAgents="6">
+    <agent name="agent13" />
+    <agent name="agent14" />
+    <agent name="agent15" />
+    <agent name="agent16" />
+    <agent name="agent321" />
+    <agent name="agent322" />
+  </agents>
+  <domains nbDomains="2">
+    <domain name="domain1" nbValues="24">16 30 44 58 72 86 100 114 128 142 156 254 268 282 296 310 324 338 352 366 380 394 414 428 </domain>
+    <domain name="domain3" nbValues="16">30 44 58 72 86 100 114 128 142 268 282 296 310 324 338 352 </domain>
+  </domains>
+  <variables nbVariables="6">
+    <variable name="variable13" domain="domain1" agent="agent13" />
+    <variable name="variable14" domain="domain1" agent="agent14" />
+    <variable name="variable15" domain="domain1" agent="agent15" />
+    <variable name="variable16" domain="domain1" agent="agent16" />
+    <variable name="variable321" domain="domain1" agent="agent321" />
+    <variable name="variable322" domain="domain1" agent="agent322" />
+  </variables>
+  <predicates nbPredicates="15">
+    <predicate name="13 = 14">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>eq(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="13 &gt; 15">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="13 &gt; 16">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="13 &gt; 321">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="13 &gt; 322">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="14 &gt; 15">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="14 &gt; 16">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="14 &gt; 321">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="14 &gt; 322">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="15 = 16">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>eq(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="15 &gt; 321">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="15 &gt; 322">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="16 &gt; 321">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="16 &gt; 322">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>gt(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+    <predicate name="321 = 322">
+      <parameters>int V1 int V2 int K12</parameters>
+      <expression>
+        <functional>eq(abs(sub(V1, V2)),K12)</functional>
+      </expression>
+    </predicate>
+  </predicates>
+  <constraints nbConstraints="15">
+    <constraint name="variable13 &amp; variable14" arity="2" scope="variable13 variable14" reference="13 = 14">
+      <parameters>variable13 variable14 238</parameters>
+    </constraint>
+    <constraint name="variable13 &amp; variable15" arity="2" scope="variable13 variable15" reference="13 &gt; 15">
+      <parameters>variable13 variable15 59</parameters>
+    </constraint>
+    <constraint name="variable13 &amp; variable16" arity="2" scope="variable13 variable16" reference="13 &gt; 16">
+      <parameters>variable13 variable16 186</parameters>
+    </constraint>
+    <constraint name="variable13 &amp; variable321" arity="2" scope="variable13 variable321" reference="13 &gt; 321">
+      <parameters>variable13 variable321 10</parameters>
+    </constraint>
+    <constraint name="variable13 &amp; variable322" arity="2" scope="variable13 variable322" reference="13 &gt; 322">
+      <parameters>variable13 variable322 186</parameters>
+    </constraint>
+    <constraint name="variable14 &amp; variable15" arity="2" scope="variable14 variable15" reference="14 &gt; 15">
+      <parameters>variable14 variable15 186</parameters>
+    </constraint>
+    <constraint name="variable14 &amp; variable16" arity="2" scope="variable14 variable16" reference="14 &gt; 16">
+      <parameters>variable14 variable16 59</parameters>
+    </constraint>
+    <constraint name="variable14 &amp; variable321" arity="2" scope="variable14 variable321" reference="14 &gt; 321">
+      <parameters>variable14 variable321 168</parameters>
+    </constraint>
+    <constraint name="variable14 &amp; variable322" arity="2" scope="variable14 variable322" reference="14 &gt; 322">
+      <parameters>variable14 variable322 11</parameters>
+    </constraint>
+    <constraint name="variable15 &amp; variable16" arity="2" scope="variable15 variable16" reference="15 = 16">
+      <parameters>variable15 variable16 238</parameters>
+    </constraint>
+    <constraint name="variable15 &amp; variable321" arity="2" scope="variable15 variable321" reference="15 &gt; 321">
+      <parameters>variable15 variable321 10</parameters>
+    </constraint>
+    <constraint name="variable15 &amp; variable322" arity="2" scope="variable15 variable322" reference="15 &gt; 322">
+      <parameters>variable15 variable322 186</parameters>
+    </constraint>
+    <constraint name="variable16 &amp; variable321" arity="2" scope="variable16 variable321" reference="16 &gt; 321">
+      <parameters>variable16 variable321 168</parameters>
+    </constraint>
+    <constraint name="variable16 &amp; variable322" arity="2" scope="variable16 variable322" reference="16 &gt; 322">
+      <parameters>variable16 variable322 11</parameters>
+    </constraint>
+    <constraint name="variable321 &amp; variable322" arity="2" scope="variable321 variable322" reference="321 = 322">
+      <parameters>variable321 variable322 238</parameters>
+    </constraint>
+  </constraints>
+</instance>
